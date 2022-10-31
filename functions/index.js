@@ -33,7 +33,7 @@ exports.registerUrl = functions.https.onRequest((req, res) => {
 exports.c2bSuccess = functions.https.onRequest((req, res) => {
 
     // this is not really necessary, but let's just respond
-    return res.json({
+    res.json({
         ResultCode: 0,
         ResultDesc: "Accepted"
     });
