@@ -3,7 +3,7 @@ const admin = require("firebase-admin");
 const Mpesa = require("mpesa-node");
 
 admin.initializeApp();
-
+const url = "https://cloud-functions-link";
 // config object
 const config = {
     key: "consumer key",
