@@ -26,7 +26,7 @@ const mpesaClient = new Mpesa({
 
 // hit this url to register your urls
 exports.registerUrl = functions.https.onRequest((req, res) => {
-    mpesaClient.c2bRegister(`${url}/c2bSuccess`, `${url}/c2bValidate`)
+    mpesaClient.c2bRegister(`${url}/c2bValidate`, `${url}/c2bSuccess`)
 })
 
 // do your confirmation logic in here
